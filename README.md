@@ -35,13 +35,13 @@ Any hot-ends that does not require a custom/extended main-body for the Stealth B
   - It is officially supported for the Stealth Burner.
   - It has the the right amount of thermal mass to keep the nozzle temperature stable, while still have decent heat-up and cool-down time.
 - Phaetus Dragon - Not recommended.
-  - The heater block causing slow heat-up and cool-down. This is not ideal, since it is beneficial to lower the tool temperature when it is docked for a long period of time.
+  - The heater block causes slow heat-up and cool-down. This is not ideal, since it is beneficial to lower the tool temperature when it is docked for a long period of time.
   - The cold side of the hot-end is inadequate to cool PLA in a 30°C+ chamber, eventually causing heat creep if the heater is constantly on.
-  - Close proximity between the heater block to the plastic causing deformation. This does not resulted in critical failures, but the affected parts will not work on any other assembly.
+  - Close proximity between the heater block to the plastic causing deformation. This does not result in critical failures, but the affected parts will not work on any other assembly.
 
 #### Extruder:
 
-All extruder that is compatible with the Stealth Burner should works just fine. Nevertheless, any added dimensions on top of the Clockwork 2 might resulted in less print area or space for other tool-heads.
+All extruders that are compatible with the Stealth Burner should work just fine. Nevertheless, any added dimensions on top of the Clockwork 2 might result in less print area or less space for other tool-heads.
 
 **For v1:** 
 
@@ -51,7 +51,7 @@ All extruder that is compatible with the Stealth Burner should works just fine. 
 
 * Galileo 2 Extruder (G2E)
   
-  * The thumbscrew stick out ~8mm to the left. Thus, taking up more docking space than default.
+  * The thumbscrew sticks out ~8mm to the left. Thus, taking up more docking space than the default.
 
 ## Assembly
 
@@ -59,18 +59,18 @@ BOM, STLs, and instructions are in the [STL_&_Assembly](./STL_&_Assembly) folder
 
 **<u>Note:</u>**
 
-Through testing with material combinations such as ABS-PLA. The window for success for combination of materials that need an enclosure and those that don't are extremely tight. Achieving it require additional hardware (for active chamber temperature control), compromises (such as: weaker layer adhesion, weaker bed adhesion, etc.), and trials-&-errors for every print job. Therefore, it is advised to decide on whether the machine should or should not be enclosed before hand and stick with material combinations that has the same chamber requirements.
+Thorough testing with material combinations such as ABS-PLA. The window for success for a combination of materials that need an enclosure and those that don't is extremely tight. Achieving it requires additional hardware (for active chamber temperature control), compromising issues (such as: weaker layer adhesion, weaker bed adhesion, etc.), and trials-&-errors for every print job. Therefore, it is advised to decide on whether the machine should or should not be enclosed beforehand and stick with material combinations that have the same chamber requirements.
 
 ## Software
 
 For the latest **Alpha** / **Beta** / **Release** version, instructions are available here: [Klipper_Config](https://github.com/VIN-y/MissChanger/tree/main/Klipper_Config).
 
-The plugin for MissChanger is a fork of [klipper-toolchanger](https://github.com/viesturz/klipper-toolchanger), for [Tapchanger](https://github.com/viesturz/tapchanger), and it is available via GitHub at [VIN-y/klipper-toolchanger](https://github.com/VIN-y/klipper-toolchanger). MissChanger deviate greatly from the design of Tapchanger and Draftshift (Stealthchanger); thus, it's config files are not compatible upstream.
+The plugin for MissChanger is a fork of [klipper-toolchanger](https://github.com/viesturz/klipper-toolchanger), for [Tapchanger](https://github.com/viesturz/tapchanger), and it is available via GitHub at [VIN-y/klipper-toolchanger](https://github.com/VIN-y/klipper-toolchanger). MissChanger deviates greatly from the design of Tapchanger and Draftshift (Stealthchanger); thus, it's config files are not compatible upstream.
 
 ### Recommended software:
 
 - [KIAUH](https://github.com/dw-0/kiauh) - For the purpose of managing Klipper updates, to handle any potential incompatibility issues, whenever there is a major Klipper update.
-- [Klipper-Backup](https://github.com/Staubgeborener/Klipper-Backup) - Klipper-Backup is a script for manual or automated GitHub backups. It's Lightweight, pragmatic and comfortable.
+- [Klipper-Backup](https://github.com/Staubgeborener/Klipper-Backup) - Klipper-Backup is a script for manual or automated GitHub backups. It's lightweight, pragmatic and comfortable.
 
 ## Roadmap
 
@@ -96,14 +96,14 @@ The plugin for MissChanger is a fork of [klipper-toolchanger](https://github.com
 | Release   | Finalised.<br>All relevant components and documentations are finished and tested.                                |
 | Beta      | All relevant components are locked into a release package.<br/>However, without substantial testing or feedback. |
 | Alpha     | CAD designs locked in.<br>No (or incomplete) documentations.                                                     |
-| Bleeding  | Everything are subjected to changes.                                                                             |
+| Bleeding  | Everything is subject to changes.                                                                             |
 | Abandoned | Old design that is no longer being persuaded.                                                                    |
 
 Note: 
 
 * The .step and CAD project files for all but the most recent version will not be included in this repository, due to the storage/transfer limits of GitHub.
 
-* With user feedback and further testing, the relevant version might be updated to the next tier. However, if significant changes are required, another version will be made and start at the bleeding state; and the current version will no longer be persuaded (i.e. abandoned).
+* With user feedback and further testing, the relevant version might be updated to the next tier. However, if significant changes are required, another version will be made and start at the bleeding state; and the current version will no longer be pursued (i.e. abandoned).
 
 ## Recommendations
 
@@ -113,16 +113,16 @@ Note:
    
    2. Meaningful variants includes: extruder, nozzle size, nozzle material.
 
-2. The following mods are not needed but is **recommended** to enhance the capability of MissChanger:
+2. The following mods are not needed but are **recommended** to enhance the capability of MissChanger:
    
-   1. [Calilantern Calibration Tool](https://vector3d.shop/products/calilantern-calibration) - MissChanger requires relatively high dimensional-accurate printed parts, to mate with each others. Therefore, it is recommended that you take the extra steps to calibrate your printer before starting the build.
+   1. [Calilantern Calibration Tool](https://vector3d.shop/products/calilantern-calibration) - MissChanger requires relatively high dimensionally-accurate printed parts, to mate with each others. Therefore, it is recommended that you take the extra steps to calibrate your printer before starting the build.
    2. [Nevermore StealthMax](https://github.com/nevermore3d/StealthMax) - to regulate the chamber temperature, to allow PETG / PLA printing with the door closed; allowing them to be combined with ABS.
-   3. [Spool Holder](https://www.printables.com/model/872144-spool-holder-for-2020-aluminium-extrusion) - to hold the spools on top of the machine. There are many ways to get this done, and it depends on the people's specific use-cases. The design linked here is just of my (the developer) own creation.
+   3. [Spool Holder](https://www.printables.com/model/872144-spool-holder-for-2020-aluminium-extrusion) - to hold the spools on top of the machine. There are many ways to get this done, and it depends on the person's specific use-cases. The design linked here is just of my (the developer) own creation.
    4. [Inverted z-chain](https://www.printables.com/model/445298-inverted-z-chain-for-voron) - This is for the Voron 2.4 300mm, or smaller. To clear the space in front of the back gantry extrusion for the umbilicals.
 
 3. The following mods are either **not recommended** or known to be not compatible with MissChanger:
    
-   1. GE5C bearing z mount - This mod offer too much flexibility to the gantry, allowing it to sag when the z motors are disabled/un-powered. Nevertheless, it's inclusion will not cause catastrophic problems. You will just need to be careful. (I personally could not be bothered enough to remove mine) 
+   1. GE5C bearing z mount - This mod offers too much flexibility to the gantry, allowing it to sag when the z motors are disabled/un-powered. Nevertheless, it's inclusion will not cause catastrophic problems. You will just need to be careful. (I personally could not be bothered enough to remove mine) 
    
    2. Beefy front idlers - The cut off on the dock can only fit the stock front idlers.
    
@@ -140,11 +140,11 @@ Note:
 
 Community members are encouraged to modify the the CAD where they see fit. They can contribute back to the project by either:
 
-1. Creating a Pull Request, and add the modded files into the [UserMods](./UserMods) folder.
+1. Creating a Pull Request, and adding the modded files into the [UserMods](./UserMods) folder.
 
 2. Reach out and send me the STEP files.
 
-Modded items are not tested or officially supported. However, if it contains good ideas, it will be implemented into the official design down the line. The originator of the ideas will be included in the list bellow as a contributor.
+Modded items are not tested or officially supported. However, if one contains good ideas, it will be implemented into the official design down the line. The originator of the ideas will be included in the list below as a contributor.
 
 ... So, don't give yourself a weird name, please.
 
@@ -152,7 +152,7 @@ Modded items are not tested or officially supported. However, if it contains goo
 
 If you have any question, please FIRST check the [MissChanger Wiki](https://github.com/VIN-y/MissChanger/wiki)
 
-If you still have any question, you can reach me at:
+If you still have any questions, you can reach me at:
 
 * `@vin` in the [Voron Toolchangers](https://discord.gg/qrb6HXNYxs) discord
 * `@vinny_69 V2.6365` in the [VORONDesign](https://discord.gg/voron) discord
@@ -162,4 +162,5 @@ If you still have any question, you can reach me at:
 
 * `@psychosis5150` in the [Voron Toolchangers](https://discord.gg/qrb6HXNYxs) discord
 * `@pendorbound` in the [Voron Toolchangers](https://discord.gg/qrb6HXNYxs) discord
+
 
